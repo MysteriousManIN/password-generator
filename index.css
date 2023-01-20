@@ -1,0 +1,257 @@
+.section-1{
+	height:calc(100vh - 64px);
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.rpg-box > h3{
+	margin:0;
+	font-size:var(--fs_7);
+	text-align:center;
+}
+
+.input-box{
+	margin:16px 0;
+	height:48px;
+	width:320px;
+	background-color:var(--c_3);
+	box-sizing:border-box;
+	position:relative;
+}
+
+.input-box > input{
+	outline:none;
+	height:100%;
+	width:100%;
+	padding:0 64px 0 16px;
+	background-color:transparent;
+	color:var(--c_2);
+	border:none;
+	font-family:var(--ff_s);
+	font-variant-numeric: tabular-nums;
+	letter-spacing:1px;
+	box-sizing:border-box;
+}
+
+.input-box > button{
+	outline:none;
+	cursor:pointer;
+	height:48px;
+	width:48px;
+	background-color:transparent;
+	border:none;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.input-box > button.copied::after{
+	user-select: none;
+	content:"Copied";
+	padding:2px 4px;
+	background:var(--c_4);
+	font-family:var(--ff_p);
+	font-size:var(--fs_1);
+	position:absolute;
+	top:-17px;
+	right:0;
+}
+
+.input-box > button.copied::before{
+	content:"";
+	height:4px;
+	width:8px;
+	border-top:4px solid var(--c_4);
+	border-left:4px solid transparent;
+	border-right:4px solid transparent;
+	box-sizing:border-box;
+	position:absolute;
+	top:-4px;
+	right:0;
+}
+
+.input-box > button > span{
+	--size:20;
+	--color:var(--c_2);
+}
+
+.rpg-form{
+	width:320px;
+	padding:16px;
+	background-color:var(--c_3);
+	box-sizing:border-box;
+}
+
+.range-box > div{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.range-box > div > label{
+	font-weight:700;
+}
+
+.range-box > input{
+	outline:none;
+	margin-top:16px;
+	appearance:none;
+	height:2px;
+	width:100%;
+	background-color:var(--c_4);
+	background-image:linear-gradient(to right, var(--c_6) 6.74157%, transparent 0%);
+}
+
+.range-box > input::-webkit-slider-runnable-track{
+	appearance:none;
+	height:2px;
+}
+
+.range-box > input::-webkit-slider-thumb{
+	appearance:none;
+	cursor: pointer;
+	height:12px;
+	width:12px;
+	background-color:var(--c_3);
+	border-radius:50%;
+	border:2px solid var(--c_6);
+	box-sizing:border-box;
+	transform:translateY(-5px);
+}
+
+.range-box > input.overlimit::-webkit-slider-thumb{
+	border-color:var(--red);
+}
+
+.checkboxes{
+	margin:16px 0;
+}
+
+.checkboxes > label{
+	height:32px;
+	width:49%;
+	display:inline-flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-content:center;
+	flex-wrap:wrap;
+	gap:8px;
+	line-height:16px;
+	box-sizing:border-box;
+}
+
+.entropy-box{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.entropy-box > span:first-child{
+	font-weight:700;
+}
+
+.strength-box{
+	margin-top:16px;
+}
+
+.strength-box > div{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.strength-box > div > span:first-child{
+	font-weight:700;
+}
+
+.strength-box > div > span:last-child{
+	text-transform:capitalize;
+}
+
+.strength-meter{
+	margin-top:8px;
+	height:8px;
+	width:100%;
+}
+
+.strength-meter::-webkit-meter-bar{
+	height:8px;
+	border:none;
+	background-color:var(--c_4);
+	border-radius:0;
+}
+
+.strength-meter::-webkit-meter-optimum-value{
+	transition:all 150ms linear;
+}
+
+.strength-meter[value="1"]::-webkit-meter-optimum-value{
+	background-color:var(--red);
+}
+
+.strength-meter[value="2"]::-webkit-meter-optimum-value{
+	background-color:var(--orange);
+}
+
+.strength-meter[value="3"]::-webkit-meter-optimum-value{
+	background-color:var(--yellow);
+}
+
+.strength-meter[value="4"]::-webkit-meter-optimum-value{
+	background-color:var(--green);
+}
+
+.strength-meter[value="5"]::-webkit-meter-optimum-value{
+	background-color:var(--green_1);
+}
+
+.rpg-form > button{
+	margin-top:16px;
+	outline:none;
+	cursor:pointer;
+	height:48px;
+	width:100%;
+	font-family:var(--ff_p);
+	padding:0 12px;
+	background-color:var(--c_6);
+	color:var(--c_3);
+	border:none;
+	border-radius:2px;
+	box-sizing:border-box;
+}
+
+.rpg-form > button:hover{
+	background-color:var(--c_7);
+}
+
+.rpg-form > button:active{
+	background-color:var(--c_6);
+}
+
+.footer{
+	height:64px;
+	width:100%;
+	padding:8px;
+	box-sizing:border-box;
+}
+
+.dac{
+	user-select: none;
+	margin:auto;
+	height:100%;
+	width:fit-content;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.dac > span:nth-child(1){
+	font-size:var(--fs_3);
+	color:var(--c_8);
+}

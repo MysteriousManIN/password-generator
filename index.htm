@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" >
+	<meta name="theme-color" content="#f7f9fc" >
+	<meta name="author" content="Chetan Saini" >
+	<meta name="description" content="Random password generator" >
+	<meta name="keywords" content="Password, Generator, Entropy, Random" >
+	<title>Password Generator</title>
+	<link rel="preload" as="style" href="main.css" />
+	<!-- <link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" /> -->
+	<link rel="preload" as="script" href="https://cdn.com/google/google_jquery.min.js" />
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="index.css" />
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer ></script> -->
+	<script src="https://cdn.com/google/google_jquery.min.js" defer ></script>
+	<script src="o-index.js" defer ></script>
+</head>
+<body>
+
+	<main>
+		
+		<section class="section-1" >
+
+			<div class="rpg-box" >
+				
+				<h3>Password Generator</h3>
+
+				<div class="input-box" >
+					<input id="rand-pswd" type="text" placeholder="Random password" readonly />
+					<button id="copy-btn" type="button" ><span class="remixicon_os20_file-copy" ></span></button>
+				</div>
+
+				<form id="rpg-form" class="rpg-form" >
+					<div class="range-box" >
+						<div>
+							<label for="char-len" >Character length</label>
+							<span id="char-len-val" >12</span>
+						</div>
+						<input id="char-len" name="char-len" type="range" min="6" max="95" value="12" />
+					</div>
+					<div class="checkboxes" >
+						<label>
+							<input class="input-checkbox" type="checkbox" name="p-option" value="smallLetter" checked />
+							<span>Small letter</span>
+						</label>
+						<label>
+							<input class="input-checkbox" type="checkbox" name="p-option" value="capitalLetter" checked />
+							<span>Capital letter</span>
+						</label>
+						<label>
+							<input class="input-checkbox" type="checkbox" name="p-option" value="digit" checked />
+							<span>Digit</span>
+						</label>
+						<label>
+							<input class="input-checkbox" type="checkbox" name="p-option" value="symbol" checked />
+							<span>Symbol</span>
+						</label>
+						<label>
+							<input class="input-checkbox" type="checkbox" name="p-option" value="excludeDuplicate" />
+							<span>Exclude duplicate</span>
+						</label>
+						<label>
+							<input class="input-checkbox" type="checkbox" name="p-option" value="space" />
+							<span>Include space</span>
+						</label>
+					</div>
+					<div class="entropy-box" >
+						<span>Entropy</span>
+						<span id="pswd-entropy" >bits</span>
+					</div>
+					<div class="strength-box" >
+						<div>
+							<span>Strength</span>
+							<span id="pswd-strength" ></span>
+						</div>
+						<meter id="pswd-strength-meter" class="strength-meter" min="0" max="5" value="4" ></meter>
+					</div>
+					<button type="submit" >Generate</button>
+				</form>
+
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer class="footer" >
+		<div class="dac" >
+			<span>Designed & Coded by</span>
+			<span>Chetan Saini</span>
+		</div>
+	</footer>
+
+
+</body>
+</html>
