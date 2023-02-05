@@ -5,7 +5,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('https://fontfamiliesbychetansaini.on.drv.tw/typeface/u/Ubuntu%20Mono/woff2/UbuntuMono-Regular.woff2') format('woff2');
+    src: url('https://dl.dropboxusercontent.com/s/5tvl4rmy9twlxv8/UbuntuMono-Regular.woff2') format('woff2');
 }
 
 @font-face{
@@ -13,7 +13,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('https://fontfamiliesbychetansaini.on.drv.tw/typeface/p/Product%20Sans/woff/ProductSans-Regular.woff') format('woff');
+    src: url('https://dl.dropboxusercontent.com/s/zdyjlaqr01s269r/ProductSans-Regular.woff') format('woff');
 }
 
 @font-face{
@@ -21,7 +21,7 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: url('https://fontfamiliesbychetansaini.on.drv.tw/typeface/p/Product%20Sans/woff/ProductSans-Bold.woff') format('woff');
+    src: url('https://dl.dropboxusercontent.com/s/p0hk5c3q28ld2tg/ProductSans-Bold.woff') format('woff');
 }
 
 /*---- icons ----*/
